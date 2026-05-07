@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizco Alsyahbiran — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     NAVBAR
+═══════════════════════════════ -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">KMS M Rizco Alsyahbiran</div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+    <li><a onclick="showPage('about')" id="nav-about">About</a></li>
+    <li><a onclick="showPage('skills')" id="nav-skills">Skills</a></li>
+    <li><a onclick="showPage('news')" id="nav-news">News</a></li>
+    <li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════
+     PAGE: HOME
+═══════════════════════════════ -->
+<div id="home" class="page active">
+  <div class="hero">
+    <!-- Left -->
+    <div>
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text">Mahasiswa Sistem Informasi</span>
+      </div>
+      <h1 class="hero-name">
+        KMS M <span class="gold">Rizco</span><br>Alsyahbiran
+      </h1>
+      <p class="hero-role">Institut Teknologi PLN · Tangerang Selatan</p>
+      <p class="hero-desc">
+        Pribadi yang berdedikasi dengan kemampuan kerja sama tim yang solid
+        dan manajemen waktu yang efisien. Aktif berorganisasi dan berkomitmen
+        memberikan kontribusi nyata di setiap peran yang diemban.
+      </p>
+      <div class="hero-btns">
+        <button class="btn btn-gold" onclick="showPage('about')">Tentang Saya</button>
+        <button class="btn btn-ghost" onclick="showPage('contact')">Hubungi Saya</button>
+      </div>
+    </div>
+    <!-- Right / Photo -->
+    <div class="hero-photo-wrap">
+      <div class="photo-card">
+        <div class="photo-inner">
+          <img src="foto diri.jpeg" alt="Rizco Alsyahbiran" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Bar -->
+  <div class="hero-bar">
+    <div class="hero-bar-item">
+      <div>
+        <div class="bar-num">3+</div>
+        <div class="bar-label">Tahun<br>Berorganisasi</div>
+      </div>
+    </div>
+    <div class="hero-bar-item">
+      <div>
+        <div class="bar-num">3</div>
+        <div class="bar-label">Pengalaman<br>Organisasi</div>
+      </div>
+    </div>
+    <div class="hero-bar-item">
+      <div>
+        <div class="bar-num">SI</div>
+        <div class="bar-label">Jurusan<br>Sistem Informasi</div>
+      </div>
+    </div>
+    <div class="hero-bar-item">
+      <div>
+        <div class="bar-num">∞</div>
+        <div class="bar-label">Semangat<br>Belajar</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: ABOUT
+═══════════════════════════════ -->
+<div id="about" class="page">
+  <div class="section-wrap">
+    <div class="sec-tag">Mengenal Lebih Dekat</div>
+    <h2 class="sec-title">Tentang Saya</h2>
+
+    <div class="about-grid">
+      <!-- Left: Bio + Info -->
+      <div>
+        <div class="about-text">
+          <p>
+            Halo! Saya <strong>KMS M Rizco Alsyahbiran</strong>, mahasiswa S1 Sistem Informasi di
+            Institut Teknologi PLN angkatan 2024. Lahir dan besar di Palembang,
+            kini berdomisili di Tangerang Selatan untuk menempuh pendidikan.
+          </p>
+          <p>
+            Saya adalah pribadi yang berdedikasi, memiliki kemampuan kerja sama tim yang solid,
+            serta manajemen waktu yang efisien. Saya percaya bahwa ketelitian dalam mengikuti
+            instruksi kerja dan prosedur operasional adalah kunci keberhasilan setiap tugas.
+          </p>
+          <p>
+            Selain akademik, saya aktif terlibat dalam organisasi kemahasiswaan dan
+            kepanitiaan kampus, karena saya percaya pengembangan diri terbaik terjadi
+            ketika teori bertemu praktik nyata.
+          </p>
+        </div>
+        <div class="info-table">
+          <div class="info-row">
+            <span class="info-key">Nama Lengkap</span>
+            <span class="info-val">KMS M Rizco Alsyahbiran</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Email</span>
+            <span class="info-val">alsyahbiran@gmail.com</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">No. HP</span>
+            <span class="info-val">0812-7173-0177</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Domisili</span>
+            <span class="info-val">Jl. Hidup Baru, Tangerang Selatan</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Instagram</span>
+            <span class="info-val">@alsyahbiran</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Perguruan Tinggi</span>
+            <span class="info-val">Institut Teknologi PLN</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Jurusan</span>
+            <span class="info-val">S1 Sistem Informasi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Timeline -->
+      <div>
+        <h3 style="font-family:'Playfair Display',serif; font-size:1.15rem; font-weight:700; margin-bottom:28px; color:var(--muted2);">Riwayat & Pengalaman</h3>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-year">2024 – Sekarang</div>
+            <div class="t-title">S1 Sistem Informasi</div>
+            <div class="t-org">Institut Teknologi PLN</div>
+            <div class="t-desc">Menempuh pendidikan sarjana di bidang Sistem Informasi, berfokus pada pengembangan teknologi dan manajemen informasi.</div>
+          </div>
+          <div class="t-item">
+            <div class="t-year">2025 – 2026</div>
+            <div class="t-title">Staff PENDIKTEF</div>
+            <div class="t-org">BPH HIMASI Kabinet Laskar Pradana</div>
+            <div class="t-desc">Bertanggung jawab merancang konten mingguan dan bulanan yang edukatif untuk dipublikasikan di Instagram HIMASi.</div>
+          </div>
+          <div class="t-item">
+            <div class="t-year">2025 – 2026</div>
+            <div class="t-title">Panitia Divisi Kesehatan</div>
+            <div class="t-org">LKMM — Latihan Kepemimpinan Manajemen Mahasiswa</div>
+            <div class="t-desc">Bertanggung jawab menjaga kesiapan dan penanganan kesehatan selama kegiatan LKMM berlangsung.</div>
+          </div>
+          <div class="t-item">
+            <div class="t-year">2021 – 2024</div>
+            <div class="t-title">Jurusan IPS</div>
+            <div class="t-org">SMAN 3 Palembang</div>
+            <div class="t-desc">Menyelesaikan pendidikan menengah atas di SMAN 3 Palembang dengan jurusan Ilmu Pengetahuan Sosial.</div>
+          </div>
+          <div class="t-item">
+            <div class="t-year">2018 – 2021</div>
+            <div class="t-title">Ketua OSIS</div>
+            <div class="t-org">SMPIT Fathona</div>
+            <div class="t-desc">Memimpin organisasi siswa dalam merencanakan dan mengoordinasikan berbagai kegiatan sekolah — akademik, keagamaan, dan sosial.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: SKILLS
+═══════════════════════════════ -->
+<div id="skills" class="page">
+  <div class="section-wrap">
+    <div class="sec-tag">Kompetensi & Minat</div>
+    <h2 class="sec-title">Keahlian & Kesukaan</h2>
+
+    <div class="skills-intro">
+      <p>Kemampuan yang saya miliki tumbuh melalui pengalaman organisasi, kepanitiaan, dan keseharian — bukan hanya dari bangku kuliah.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🤝</div>
+        <div class="skill-name">Koordinasi Tim</div>
+        <div class="skill-desc">Terbiasa bekerja dalam tim lintas divisi dengan komunikasi yang efektif dan orientasi pada hasil.</div>
+      </div>
+      <div class="skill-card fade-up fade-up-d1">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Adaptabilitas</div>
+        <div class="skill-desc">Mampu menyesuaikan diri dengan cepat terhadap perubahan situasi, lingkungan, maupun tuntutan tugas baru.</div>
+      </div>
+      <div class="skill-card fade-up fade-up-d2">
+        <div class="skill-icon">🧠</div>
+        <div class="skill-name">Manajemen Waktu</div>
+        <div class="skill-desc">Mengelola prioritas dan tenggat waktu secara efisien, bahkan saat menjalani lebih dari satu tanggung jawab sekaligus.</div>
+      </div>
+      <div class="skill-card fade-up fade-up-d3">
+        <div class="skill-icon">💪</div>
+        <div class="skill-name">Ketahanan Fisik & Mental</div>
+        <div class="skill-desc">Stamina dan mentalitas kuat yang diasah melalui kegiatan lapangan dan kepanitiaan intensif seperti LKMM.</div>
+      </div>
+      <div class="skill-card fade-up fade-up-d1">
+        <div class="skill-icon">🚗</div>
+        <div class="skill-name">Mengendarai Kendaraan</div>
+        <div class="skill-desc">Mahir mengendarai mobil dan motor — kemampuan praktis yang mendukung mobilitas dan logistik kegiatan.</div>
+      </div>
+      <div class="skill-card fade-up fade-up-d2">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">Pembuatan Konten</div>
+        <div class="skill-desc">Pengalaman merancang konten edukatif mingguan dan bulanan untuk dipublikasikan di media sosial HIMASi.</div>
+      </div>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="hobby-section">
+      <h3 class="hobby-title">Kesukaan & Hobi</h3>
+      <div class="hobby-tags">
+        <span class="hobby-tag">⚽ Olahraga</span>
+        <span class="hobby-tag">🚴 Bersepeda</span>
+        <span class="hobby-tag">🏸 Badminton</span>
+        <span class="hobby-tag">🏊 Berenang</span>
+        <span class="hobby-tag">🎵 Mendengarkan Musik</span>
+        <span class="hobby-tag">🚗 Mengemudi</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: NEWS
+═══════════════════════════════ -->
+<div id="news" class="page">
+  <div class="section-wrap">
+    <div class="sec-tag">Artikel & Cerita</div>
+    <h2 class="sec-title">News & Blog</h2>
+
+    <div class="news-grid">
+      <!-- Featured -->
+      <div class="news-card news-featured" onclick="showDetail('lkmm')">
+        <div class="news-thumb" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+          <span style="position:relative;z-index:1;font-size:3.5rem;">🏕️</span>
+          <span class="news-cat">Organisasi</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date">28 April 2025</div>
+          <h3 class="news-title">Pengalaman Menjadi Panitia LKMM: Menjaga Kesehatan di Balik Layar Kepemimpinan</h3>
+          <p class="news-excerpt">Menjadi bagian dari Divisi Kesehatan LKMM bukan hanya soal P3K — ini soal tanggung jawab memastikan 200+ peserta tetap prima selama pelatihan kepemimpinan berlangsung.</p>
+        </div>
+        <div class="news-footer">
+          <span class="news-read">Baca Selengkapnya</span>
+          <span class="news-arrow">→</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="news-card" onclick="showDetail('web')">
+        <div class="news-thumb" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a0a00 100%);">
+          <span style="position:relative;z-index:1;">💻</span>
+          <span class="news-cat">Teknologi</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date">10 Maret 2025</div>
+          <h3 class="news-title">Belajar HTML & CSS dari Nol: Perjalanan Pertamaku di Dunia Web</h3>
+          <p class="news-excerpt">Siapa sangka dari tag &lt;html&gt; yang sederhana bisa lahir halaman web yang elegan. Ini cerita awal perjalananku belajar pemrograman web.</p>
+        </div>
+        <div class="news-footer">
+          <span class="news-read">Baca Selengkapnya</span>
+          <span class="news-arrow">→</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="news-card" onclick="showDetail('himasi')">
+        <div class="news-thumb" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a1a00 100%);">
+          <span style="position:relative;z-index:1;">📢</span>
+          <span class="news-cat">Organisasi</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date">5 Februari 2025</div>
+          <h3 class="news-title">Bergabung di HIMASI: Belajar Membuat Konten Edukasi yang Menarik</h3>
+          <p class="news-excerpt">Menjadi Staff PENDIKTEF di BPH HIMASI mengajarkanku lebih dari sekadar posting — ini soal strategi konten dan dampak nyata bagi mahasiswa.</p>
+        </div>
+        <div class="news-footer">
+          <span class="news-read">Baca Selengkapnya</span>
+          <span class="news-arrow">→</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="news-card" onclick="showDetail('si')">
+        <div class="news-thumb" style="background: linear-gradient(135deg, #050510 0%, #0d0d2b 100%);">
+          <span style="position:relative;z-index:1;">🎓</span>
+          <span class="news-cat">Akademik</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date">15 Januari 2025</div>
+          <h3 class="news-title">Mengapa Saya Memilih Sistem Informasi di IT PLN</h3>
+          <p class="news-excerpt">Dari jurusan IPS ke Sistem Informasi — perjalanan yang terasa beda, tapi penuh makna. Ini alasan di balik pilihan tersebut.</p>
+        </div>
+        <div class="news-footer">
+          <span class="news-read">Baca Selengkapnya</span>
+          <span class="news-arrow">→</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="news-card" onclick="showDetail('osis')">
+        <div class="news-thumb" style="background: linear-gradient(135deg, #0a0a0a 0%, #001a0a 100%);">
+          <span style="position:relative;z-index:1;">🏅</span>
+          <span class="news-cat">Kepemimpinan</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date">20 Desember 2024</div>
+          <h3 class="news-title">Pelajaran dari Menjadi Ketua OSIS SMPIT Fathona</h3>
+          <p class="news-excerpt">Tiga tahun memimpin organisasi siswa meninggalkan banyak bekas: pelajaran tentang tanggung jawab, empati, dan arti sebuah kepercayaan.</p>
+        </div>
+        <div class="news-footer">
+          <span class="news-read">Baca Selengkapnya</span>
+          <span class="news-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: NEWS DETAIL
+═══════════════════════════════ -->
+<div id="news-detail" class="page">
+  <div class="detail-hero">
+    <div class="detail-inner">
+      <div class="detail-back" onclick="showPage('news')">← Kembali ke News</div>
+      <div class="detail-cat" id="detail-cat">Organisasi</div>
+      <h1 class="detail-title" id="detail-title">Judul Artikel</h1>
+      <div class="detail-meta">
+        <span>📅 <span id="detail-date">28 April 2025</span></span>
+        <span>✍️ Rizco Alsyahbiran</span>
+        <span>⏱ 5 menit baca</span>
+      </div>
+    </div>
+  </div>
+  <div class="detail-content-wrap">
+    <div class="detail-content" id="detail-body"></div>
+    <div class="detail-tags" id="detail-tags"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     PAGE: CONTACT
+═══════════════════════════════ -->
+<div id="contact" class="page">
+  <div class="section-wrap">
+    <div class="sec-tag">Mari Terhubung</div>
+    <h2 class="sec-title">Hubungi Saya</h2>
+
+    <div class="contact-grid">
+      <!-- Info -->
+      <div>
+        <h3 class="contact-info-title">Senang Berkenalan!</h3>
+        <p class="contact-desc">
+          Apakah kamu ingin berdiskusi tentang kolaborasi, proyek, atau sekadar menyapa?
+          Jangan ragu untuk menghubungi saya. Saya akan membalas sesegera mungkin.
+        </p>
+        <div class="contact-items">
+          <div class="c-item">
+            <div class="c-icon">📧</div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-val">alsyahbiran@gmail.com</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">📱</div>
+            <div>
+              <div class="c-label">WhatsApp</div>
+              <div class="c-val">0812-7173-0177</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">📸</div>
+            <div>
+              <div class="c-label">Instagram</div>
+              <div class="c-val">@alsyahbiran</div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">📍</div>
+            <div>
+              <div class="c-label">Lokasi</div>
+              <div class="c-val">Jl. Hidup Baru, Tangerang Selatan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nama</label>
+              <input type="text" id="f-name" placeholder="Nama kamu" />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="f-email" placeholder="email@contoh.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subjek</label>
+            <input type="text" id="f-subj" placeholder="Topik pesan..." />
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea id="f-msg" placeholder="Tulis pesanmu di sini..."></textarea>
+          </div>
+          <button class="btn btn-gold form-submit" onclick="sendForm()">Kirim Pesan →</button>
+          <div class="toast" id="toast">✅ Pesan berhasil dikirim! Terima kasih sudah menghubungi saya.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer>
+  <div class="footer-logo">KMS M Rizco Alsyahbiran</div>
+  <div class="footer-copy">© 2026 Rizco Alsyahbiran · S1 Sistem Informasi · IT PLN</div>
+  <div class="footer-links">
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════ -->
+<script>
+  // ── Page Navigation ──────────────────
+  function showPage(id) {
+    // hide all pages
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+
+    const page = document.getElementById(id);
+    if (page) page.classList.add('active');
+
+    const navLink = document.getElementById('nav-' + id);
+    if (navLink) navLink.classList.add('active');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // trigger animations
+    setTimeout(() => {
+      document.querySelectorAll('.fade-up').forEach(el => {
+        el.classList.add('visible');
+      });
+    }, 100);
+  }
+
+  // ── News Detail Data ──────────────────
+  const articles = {
+    lkmm: {
+      cat: 'Organisasi',
+      date: '28 April 2025',
+      title: 'Pengalaman Menjadi Panitia LKMM: Menjaga Kesehatan di Balik Layar Kepemimpinan',
+      body: `
+        <p>Ketika kebanyakan peserta LKMM datang untuk belajar kepemimpinan, saya datang dengan tugas yang berbeda: memastikan semua orang tetap sehat, fit, dan siap mengikuti setiap sesi yang padat.</p>
+        <h2>Tanggung Jawab yang Lebih Besar dari yang Terbayang</h2>
+        <p>Bergabung di Divisi Kesehatan LKMM pada awalnya terasa seperti tugas teknis biasa — siapkan obat, tangani yang sakit, selesai. Ternyata, jauh lebih dari itu. Kami harus proaktif memantau kondisi peserta, mengatur pola istirahat, dan menjadi tempat pertama mereka datang ketika ada keluhan.</p>
+        <blockquote>"Di balik setiap pemimpin yang lahir dari LKMM, ada tim kesehatan yang memastikan mereka bisa berdiri tegak hingga akhir."</blockquote>
+        <h2>Pelajaran Koordinasi Nyata</h2>
+        <p>Pengalaman ini mengajarkan saya arti koordinasi yang sesungguhnya. Kami bekerja bersamaan dengan divisi lain — konsumsi, acara, perlengkapan — dan semua harus sinkron. Satu divisi terlambat, dampaknya terasa ke mana-mana.</p>
+        <p>Saya juga belajar pentingnya komunikasi yang tenang di bawah tekanan. Ketika seorang peserta tiba-tiba tidak enak badan di tengah sesi, respons cepat dan tenang dari tim kesehatan menentukan apakah situasi itu menjadi masalah besar atau sekadar jeda kecil.</p>
+        <h2>Kesimpulan</h2>
+        <p>Menjadi panitia LKMM, khususnya di divisi yang jarang mendapat sorotan, mengajarkan saya nilai kerendahan hati dalam melayani. Bukan soal siapa yang terlihat — tapi soal siapa yang tetap bekerja keras meski tidak ada yang memperhatikan.</p>
+      `,
+      tags: ['LKMM', 'Organisasi', 'Kepemimpinan', 'Divisi Kesehatan', 'IT PLN']
+    },
+    web: {
+      cat: 'Teknologi',
+      date: '10 Maret 2025',
+      title: 'Belajar HTML & CSS dari Nol: Perjalanan Pertamaku di Dunia Web',
+      body: `
+        <p>Semester pertama di Sistem Informasi membawa banyak hal baru — salah satunya adalah mata kuliah Pemrograman Web. Dan perkenalan pertama saya dengan HTML adalah momen yang tidak akan terlupakan.</p>
+        <h2>Tag Pertama yang Mengubah Segalanya</h2>
+        <p>Saat pertama mengetik <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code> dan melihatnya muncul di browser, ada perasaan yang sulit dijelaskan. Sederhana, tapi terasa seperti saya baru saja berbicara dengan mesin dalam bahasa yang ia mengerti.</p>
+        <blockquote>"HTML bukan tentang kecantikan — itu tentang struktur. CSS yang membawa kecantikan itu hidup."</blockquote>
+        <h2>Dari Struktur ke Tampilan</h2>
+        <p>CSS adalah babak berikutnya yang jauh lebih menarik. Mengubah warna, mengatur tata letak, menambahkan animasi — semuanya terasa seperti sihir yang bisa dipelajari. Saya mulai memahami mengapa desain web bisa menjadi seni tersendiri.</p>
+        <h2>Apa yang Dipelajari</h2>
+        <p>Pelajaran terbesar? Konsistensi mengalahkan bakat. Setiap hari membuka editor teks, mencoba sesuatu yang baru, dan tidak takut salah — itulah cara terbaik belajar coding, terutama untuk pemula seperti saya.</p>
+      `,
+      tags: ['HTML', 'CSS', 'Pemrograman Web', 'Sistem Informasi', 'Coding']
+    },
+    himasi: {
+      cat: 'Organisasi',
+      date: '5 Februari 2025',
+      title: 'Bergabung di HIMASI: Belajar Membuat Konten Edukasi yang Menarik',
+      body: `
+        <p>Bergabung di BPH HIMASI Kabinet Laskar Pradana sebagai Staff PENDIKTEF adalah keputusan yang saya ambil dengan penuh pertimbangan — dan saya tidak pernah menyesal.</p>
+        <h2>Konten Bukan Sekadar Post</h2>
+        <p>Tugas utama saya adalah merancang konten mingguan dan bulanan yang edukatif untuk dipublikasikan di Instagram HIMASi. Ini terdengar mudah — hingga saya duduk di depan layar dan menyadari betapa sulitnya membuat konten yang informatif sekaligus engaging.</p>
+        <blockquote>"Konten yang baik bukan yang paling keren visualnya, tapi yang paling dibutuhkan oleh audiensnya."</blockquote>
+        <h2>Proses di Balik Layar</h2>
+        <p>Setiap konten melewati beberapa tahap: riset topik, penyusunan narasi, desain visual, review internal, dan baru dipublikasikan. Proses ini mengajarkan saya kesabaran dan ketelitian yang tidak bisa didapat dari bangku kuliah semata.</p>
+        <h2>Dampak yang Terasa</h2>
+        <p>Melihat konten yang saya buat dibagikan oleh mahasiswa lain, atau mendapat respons positif di kolom komentar — itu adalah kepuasan yang tidak ternilai. Organisasi mengajarkan saya bahwa dampak nyata lebih bermakna dari sekadar jabatan.</p>
+      `,
+      tags: ['HIMASI', 'Konten Edukasi', 'Organisasi', 'Instagram', 'IT PLN']
+    },
+    si: {
+      cat: 'Akademik',
+      date: '15 Januari 2025',
+      title: 'Mengapa Saya Memilih Sistem Informasi di IT PLN',
+      body: `
+        <p>Dari jurusan IPS di SMAN 3 Palembang, memilih Sistem Informasi mungkin terlihat seperti lompatan besar. Tapi bagi saya, ini adalah keputusan yang paling masuk akal.</p>
+        <h2>Titik Pertemuan Bisnis dan Teknologi</h2>
+        <p>Sistem Informasi adalah jembatan antara dunia bisnis dan teknologi. Bagi seseorang yang berlatar IPS dengan pemahaman tentang ekonomi, sosial, dan organisasi — SI terasa seperti rumah yang menyambut dengan tangan terbuka.</p>
+        <blockquote>"Teknologi tanpa pemahaman manusia hanyalah alat. SI mengajarkan kita menjadi penerjemahnya."</blockquote>
+        <h2>Kenapa IT PLN?</h2>
+        <p>Institut Teknologi PLN menawarkan lingkungan yang kondusif dengan program studi yang relevan dengan kebutuhan industri. Kurikulum yang diperbarui secara berkala dan dosen-dosen yang berpengalaman menjadi pertimbangan utama saya.</p>
+        <h2>Harapan ke Depan</h2>
+        <p>Saya ingin memanfaatkan masa kuliah sebaik-baiknya — tidak hanya dari sisi akademik, tapi juga melalui organisasi, proyek nyata, dan koneksi yang akan membentuk saya menjadi profesional yang siap bersaing.</p>
+      `,
+      tags: ['Sistem Informasi', 'IT PLN', 'Akademik', 'Motivasi', 'Kampus']
+    },
+    osis: {
+      cat: 'Kepemimpinan',
+      date: '20 Desember 2024',
+      title: 'Pelajaran dari Menjadi Ketua OSIS SMPIT Fathona',
+      body: `
+        <p>Tiga tahun menjadi Ketua OSIS SMPIT Fathona meninggalkan jejak yang dalam — bukan di lembar sertifikat, tapi di cara saya memandang kepemimpinan dan tanggung jawab.</p>
+        <h2>Kepemimpinan adalah Pelayanan</h2>
+        <p>Pelajaran pertama dan terpenting: menjadi pemimpin bukan soal memerintah, tapi soal melayani. Saya belajar ini ketika harus mengkoordinasikan berbagai kegiatan sekolah — mulai dari pentas seni, peringatan hari besar agama, hingga program sosial kemasyarakatan.</p>
+        <blockquote>"Pemimpin terbaik adalah yang paling sering bertanya 'apa yang bisa saya bantu?' bukan 'apa yang bisa kamu lakukan untukku?'"</blockquote>
+        <h2>Konflik sebagai Guru</h2>
+        <p>Tidak semua rapat berjalan mulus. Ada perdebatan, ada perbedaan pendapat, ada anggota yang kurang kooperatif. Menghadapi semua itu di usia muda mengajarkan saya pentingnya mendengar sebelum berbicara, dan mencari titik temu daripada memaksakan kehendak.</p>
+        <h2>Warisan yang Ditinggalkan</h2>
+        <p>Yang paling membanggakan bukan saat memenangkan lomba atau mendapat pujian — tapi saat melihat program yang kami rancang masih berjalan bahkan setelah saya lulus. Itu berarti sistem yang kami bangun lebih kuat dari individu mana pun.</p>
+      `,
+      tags: ['OSIS', 'Kepemimpinan', 'SMPIT Fathona', 'Organisasi', 'Pengembangan Diri']
+    }
+  };
+
+  function showDetail(key) {
+    const a = articles[key];
+    if (!a) return;
+
+    document.getElementById('detail-cat').textContent = a.cat;
+    document.getElementById('detail-title').textContent = a.title;
+    document.getElementById('detail-date').textContent = a.date;
+    document.getElementById('detail-body').innerHTML = a.body;
+
+    const tagsHtml = '<span class="detail-tags-label">Tags:</span> ' +
+      a.tags.map(t => `<span class="d-tag">${t}</span>`).join('');
+    document.getElementById('detail-tags').innerHTML = tagsHtml;
+
+    showPage('news-detail');
+    document.getElementById('nav-news').classList.add('active');
+  }
+
+  // ── Contact Form ──────────────────
+  function sendForm() {
+    const name  = document.getElementById('f-name').value.trim();
+    const email = document.getElementById('f-email').value.trim();
+    const msg   = document.getElementById('f-msg').value.trim();
+    const toast = document.getElementById('toast');
+
+    if (!name || !email || !msg) {
+      toast.style.display = 'block';
+      toast.style.borderColor = '#e74c3c';
+      toast.style.color = '#e74c3c';
+      toast.textContent = '⚠️ Harap isi semua kolom yang diperlukan.';
+      return;
+    }
+
+    toast.style.display = 'block';
+    toast.style.borderColor = 'var(--gold)';
+    toast.style.color = 'var(--gold)';
+    toast.textContent = '✅ Pesan berhasil dikirim! Terima kasih sudah menghubungi saya.';
+
+    document.getElementById('f-name').value = '';
+    document.getElementById('f-email').value = '';
+    document.getElementById('f-subj').value = '';
+    document.getElementById('f-msg').value = '';
+
+    setTimeout(() => { toast.style.display = 'none'; }, 4000);
+  }
+
+  // ── Scroll animation trigger ──────
+  function initObserver() {
+    const els = document.querySelectorAll('.fade-up');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    els.forEach(el => obs.observe(el));
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initObserver();
+    // Initial home page fade
+    setTimeout(() => {
+      document.querySelectorAll('#home .fade-up').forEach(el => el.classList.add('visible'));
+    }, 200);
+  });
+</script>
+</body>
+</html>
